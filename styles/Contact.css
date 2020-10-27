@@ -1,1 +1,192 @@
-C
+@font-face {
+    font-family: "ibm_plex_monolight";
+    src: url("Font/ibmplexmono-light-webfont.woff2") format("woff2"),
+      url("Font/ibmplexmono-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ibm_plex_monobold";
+    src: url("Font/ibmplexmono-bold-webfont.woff2") format("woff2"),
+      url("ibmplexmono-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ibm_plex_monobold_italic";
+    src: url("Font/ibmplexmono-bolditalic-webfont.woff2") format("woff2"),
+      url("Font/ibmplexmono-bolditalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ibm_plex_monoextralight";
+    src: url("Font/ibmplexmono-extralight-webfont.woff2") format("woff2"),
+      url("Font/ibmplexmono-extralight-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ibm_plex_monoXLtIt";
+    src: url("Font/ibmplexmono-extralightitalic-webfont.woff2") format("woff2"),
+      url("Font/ibmplexmono-extralightitalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ibm_plex_monoitalic";
+    src: url("Font/ibmplexmono-italic-webfont.woff2") format("woff2"),
+      url("Font/ibmplexmono-italic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ibm_plex_monolight";
+    src: url("Font/ibmplexmono-light-webfont.woff2") format("woff2"),
+      url("Font/ibmplexmono-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ibm_plex_monolight_italic";
+    src: url("Font/ibmplexmono-lightitalic-webfont.woff2") format("woff2"),
+      url("Font/ibmplexmono-lightitalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ibm_plex_monomedium";
+    src: url("ibmplexmono-medium-webfont.woff2") format("woff2"),
+      url("ibmplexmono-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ibm_plex_monomedium_italic";
+    src: url("ibmplexmono-mediumitalic-webfont.woff2") format("woff2"),
+      url("ibmplexmono-mediumitalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ibm_plex_monoregular";
+    src: url("ibmplexmono-regular-webfont.woff2") format("woff2"),
+      url("ibmplexmono-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ibm_plex_monosemibold";
+    src: url("ibmplexmono-semibold-webfont.woff2") format("woff2"),
+      url("ibmplexmono-semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  
+  .background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #0040c1;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .background li {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #0039ad;
+    color: transparent;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 7s ease-in forwards infinite;
+  }
+  undefined .background li:nth-child(0) {
+    animation-delay: 0s;
+    left: 51vw;
+    top: 95vh;
+  }
+  
+  .background li:nth-child(1) {
+    animation-delay: 2s;
+    left: 96vw;
+    top: 50vh;
+    border-color: #0046d4;
+  }
+  
+  .background li:nth-child(2) {
+    animation-delay: 4s;
+    left: 1vw;
+    top: 43vh;
+  }
+  
+  .background li:nth-child(3) {
+    animation-delay: 6s;
+    left: 43vw;
+    top: 25vh;
+  }
+  
+  .background li:nth-child(4) {
+    animation-delay: 8s;
+    left: 82vw;
+    top: 0vh;
+    border-color: #0046d4;
+  }
+  
+  .background li:nth-child(5) {
+    animation-delay: 10s;
+    left: 25vw;
+    top: 72vh;
+  }
+  
+  .listmenu {
+    list-style: none;
+    text-align: center;
+   
+  }
+  
+  
+  li {
+    display: inline;
+    padding-left: 20px;
+    
+  
+    
+  }
+  
+  .elemenu {
+    color:white;
+    text-decoration: none;
+    font-family: ibm_plex_monobold;
+    
+    
+  }
+  
